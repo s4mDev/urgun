@@ -1,0 +1,1967 @@
+<%= require('@parts/header.ejs')({title: 'Frontpage' }) %>
+
+<main class="homepage" id="root">
+    <section class="first">
+        <div class="container">
+            <ul class="first__nav nav">
+                <li>
+                    <a href="index.html#about">О нас</a>
+                </li>
+                <li>
+                    <a href="index.html#rent">Номера</a>
+                </li>
+                <li>
+                    <a href="index.html#price">Прайс-лист</a>
+                </li>
+                <li>
+                    <a href="index.html#gallery">Галлерея</a>
+                </li>
+                <li>
+                    <a href="index.html#faq">Вопрос-ответ</a>
+                </li>
+                <li>
+                    <a href="index.html#contacts">Схема проезда</a>
+                </li>
+            </ul>
+            <h1 class="first__title">
+                Лесной воздух и большая
+                вода на озере Ургун
+            </h1>
+            <div class="first__rent">
+                <h3 class="first__rent-title">
+                    Аренда номера на базе отдыха
+                </h3>
+                <form class="first__rent-row rent">
+                    <div class="rent__item">
+                        <div class="rent__item-wrapper">
+                            <h4 class="rent__item-title">
+                                Заезд
+                            </h4>
+                            <div class="rent__item-control">
+                                <input type="text" class="rent__item-date js--date" id="date-1" placeholder="22.02.2022">
+                                <label for="date-1">
+                                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 6L13 1" stroke="#629136"/>
+                                    </svg>                                    
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rent__item">
+                        <div class="rent__item-wrapper">
+                            <h4 class="rent__item-title">
+                                Выезд
+                            </h4>
+                            <div class="rent__item-control">
+                                <input type="text" class="rent__item-date js--date" id="date-2" placeholder="22.02.2022">
+                                <label for="date-2">
+                                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 6L13 1" stroke="#629136"/>
+                                    </svg>                                    
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rent__item">
+                        <div class="rent__item-wrapper">
+                            <h4 class="rent__item-title">
+                                Размещения
+                            </h4>
+                            <select id="type" class="rent__item-select">
+                                <option>
+                                    Премиум (2 комнаты)
+                                </option>
+                                <option>
+                                    Люкс (2 комнаты)
+                                </option>
+                                <option>
+                                    Эконом (2 комнаты)
+                                </option>
+                                <option>
+                                    Коттедж (2 комнаты)
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="rent__item">
+                        <button class="rent__item-submit">
+                            Подобрать
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="about__title">
+                <strong>Современный</strong> <br>
+                туристический комплекс
+            </h2>
+            <p class="about__txt">
+                Кроме чистого воздуха и красоты окружающих пейзажей для хорошего отдыха необходимы комфортные условия проживания <br>
+                и современные атрибуты цивилизации. На базе отдыха «Ургун» Республики Башкортостан к услугам отдыхающих предоставлен современный 3-х этажный жилой корпус, который способен вместить в себя до 130 посетителей.
+            </p>
+            <div class="about__slider">
+                <div class="about__slider-item">
+                    <a href="<%=require('@img/about-1.png') %>" class="about__slider-link js--openImage">
+                        <img src="<%=require('@img/about-1.png') %>" alt="">
+                    </a>
+                </div>
+                <div class="about__slider-item">
+                    <a href="<%=require('@img/about-1.png') %>" class="about__slider-link js--openImage">
+                        <img src="<%=require('@img/about-1.png') %>" alt="">
+                    </a>
+                </div>
+                <div class="about__slider-item">
+                    <a href="<%=require('@img/about-1.png') %>" class="about__slider-link js--openImage">
+                        <img src="<%=require('@img/about-1.png') %>" alt="">
+                    </a>
+                </div>
+                <div class="about__slider-item">
+                    <a href="<%=require('@img/about-1.png') %>" class="about__slider-link js--openImage">
+                        <img src="<%=require('@img/about-1.png') %>" alt="">
+                    </a>
+                </div>
+                <div class="about__slider-item">
+                    <a href="<%=require('@img/about-1.png') %>" class="about__slider-link js--openImage">
+                        <img src="<%=require('@img/about-1.png') %>" alt="">
+                    </a>
+                </div>
+            </div>
+            <p class="about__slider-txt">
+                Посетителям предлагается несколько вариантов проживания в комфортных номерах "эконом" и "стандарт" с телевизором <br>
+                и холодильником, а так же в номерах "комфорт" класса, с отдельным туалетом и душем.
+            </p>
+        </div>
+    </section>
+    <section class="catalog" id="rent">
+        <div class="container">
+            <h2 class="catalog__title">
+                База отдыха Ургун <br>
+                <strong>предлагает</strong>
+            </h2>
+            <div class="catalog__filters">
+                <a href="" class="catalog__filters-item">
+                    Люкс
+                </a>
+                <a href="" class="catalog__filters-item">
+                    Люкс
+                </a>
+                <a href="" class="catalog__filters-item">
+                    Люкс
+                </a>
+                <a href="" class="catalog__filters-item">
+                    Люкс
+                </a>
+                <a href="" class="catalog__filters-item">
+                    Люкс
+                </a>
+            </div>
+            <div class="catalog__row">
+                <div class="catalog__item-wrapper">
+                    <div class="catalog__item room">
+                        <div class="room__slider">
+                            <div class="room__slider-item">
+                                <img src="<%=require('@img/room-1.jpg') %>" alt="">
+                            </div>
+                            <div class="room__slider-item">
+                                <img src="<%=require('@img/room-1.jpg') %>" alt="">
+                            </div>
+                            <div class="room__slider-item">
+                                <img src="<%=require('@img/room-1.jpg') %>" alt="">
+                            </div>
+                        </div>
+                        <div class="room__wrapper">
+                            <div class="room__header">
+                                <div class="room__header-group">
+                                    <h4 class="room__name">
+                                        Люкс
+                                    </h4>
+                                    <div class="room__rate">
+                                        <i class="room__rate-item room__rate-item_fill">
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z" fill="#E6E6E6"/>
+                                            </svg>                                        
+                                        </i>
+                                        <i class="room__rate-item room__rate-item_fill">
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z" fill="#E6E6E6"/>
+                                            </svg>                                        
+                                        </i>
+                                        <i class="room__rate-item room__rate-item_fill">
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z" fill="#E6E6E6"/>
+                                            </svg>                                        
+                                        </i>
+                                        <i class="room__rate-item room__rate-item_fill">
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z" fill="#E6E6E6"/>
+                                            </svg>                                        
+                                        </i>
+                                        <i class="room__rate-item">
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z" fill="#E6E6E6"/>
+                                            </svg>                                        
+                                        </i>
+                                    </div>
+                                </div>
+                                <div class="room__count">
+                                    <i>
+                                        <img src="<%=require('@img/bed.svg') %>" alt="">
+                                    </i>
+                                    <span>
+                                        3
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="room__content">
+                                <p class="room__txt">
+                                    Являясь всего лишь частью общей картины, акционеры крупнейших компаний и по сей день остаются уделом либералов, которые жаждут быть представлены в исключительно положительном свете.
+                                </p>
+                                <button class="room__content-more">
+                                    Читать полностью
+                                </button>
+                            </div>
+                            <div class="room__dates">
+                                <div class="room__dates-item">
+                                    <h4 class="room__dates-title">
+                                        Заезд
+                                    </h4>
+                                    <input class="room__dates-open js--date" id="date1-1" placeholder="22.02.2022">
+                                    <label for="date1-1">
+                                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 6L13 1" stroke="#629136"/>
+                                    </svg>                                    
+                                </label>
+                                </div>
+                                <div class="room__dates-item">
+                                    <h4 class="room__dates-title">
+                                        Выезд
+                                    </h4>
+                                    <input class="room__dates-open js--date" id="date1-2" placeholder="22.02.2022">
+                                    <label for="date1-2">
+                                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 6L13 1" stroke="#629136"/>
+                                    </svg>                                    
+                                </label>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="room__btn">
+                            Забронировать номер
+                        </button>
+                    </div>
+                </div>
+                <div class="catalog__item-wrapper">
+                    <div class="catalog__item room">
+                        <div class="room__slider">
+                            <div class="room__slider-item">
+                                <img src="<%=require('@img/room-1.jpg') %>" alt="">
+                            </div>
+                            <div class="room__slider-item">
+                                <img src="<%=require('@img/room-1.jpg') %>" alt="">
+                            </div>
+                            <div class="room__slider-item">
+                                <img src="<%=require('@img/room-1.jpg') %>" alt="">
+                            </div>
+                        </div>
+                        <div class="room__wrapper">
+                            <div class="room__header">
+                                <div class="room__header-group">
+                                    <h4 class="room__name">
+                                        Люкс
+                                    </h4>
+                                    <div class="room__rate">
+                                        <i class="room__rate-item room__rate-item_fill">
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z" fill="#E6E6E6"/>
+                                            </svg>                                        
+                                        </i>
+                                        <i class="room__rate-item room__rate-item_fill">
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z" fill="#E6E6E6"/>
+                                            </svg>                                        
+                                        </i>
+                                        <i class="room__rate-item room__rate-item_fill">
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z" fill="#E6E6E6"/>
+                                            </svg>                                        
+                                        </i>
+                                        <i class="room__rate-item room__rate-item_fill">
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z" fill="#E6E6E6"/>
+                                            </svg>                                        
+                                        </i>
+                                        <i class="room__rate-item">
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z" fill="#E6E6E6"/>
+                                            </svg>                                        
+                                        </i>
+                                    </div>
+                                </div>
+                                <div class="room__count">
+                                    <i>
+                                        <img src="<%=require('@img/bed.svg') %>" alt="">
+                                    </i>
+                                    <span>
+                                        3
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="room__content">
+                                <p class="room__txt">
+                                    Являясь всего лишь частью общей картины, акционеры крупнейших компаний и по сей день остаются уделом либералов, которые жаждут быть представлены в исключительно положительном свете.
+                                </p>
+                                <button class="room__content-more">
+                                    Читать полностью
+                                </button>
+                            </div>
+                            <div class="room__dates">
+                                <div class="room__dates-item">
+                                    <h4 class="room__dates-title">
+                                        Заезд
+                                    </h4>
+                                    <input class="room__dates-open js--date" id="date2-1" placeholder="22.02.2022">
+                                    <label for="date2-1">
+                                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 6L13 1" stroke="#629136"/>
+                                    </svg>                                    
+                                </label>
+                                </div>
+                                <div class="room__dates-item">
+                                    <h4 class="room__dates-title">
+                                        Выезд
+                                    </h4>
+                                    <input class="room__dates-open js--date" id="date2-2" placeholder="22.02.2022">
+                                    <label for="date2-2">
+                                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 6L13 1" stroke="#629136"/>
+                                    </svg>                                    
+                                </label>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="room__btn">
+                            Забронировать номер
+                        </button>
+                    </div>
+                </div>
+                <div class="catalog__item-wrapper">
+                    <div class="catalog__item room">
+                        <div class="room__slider">
+                            <div class="room__slider-item">
+                                <img src="<%=require('@img/room-1.jpg') %>" alt="">
+                            </div>
+                            <div class="room__slider-item">
+                                <img src="<%=require('@img/room-1.jpg') %>" alt="">
+                            </div>
+                            <div class="room__slider-item">
+                                <img src="<%=require('@img/room-1.jpg') %>" alt="">
+                            </div>
+                        </div>
+                        <div class="room__wrapper">
+                            <div class="room__header">
+                                <div class="room__header-group">
+                                    <h4 class="room__name">
+                                        Люкс
+                                    </h4>
+                                    <div class="room__rate">
+                                        <i class="room__rate-item room__rate-item_fill">
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z" fill="#E6E6E6"/>
+                                            </svg>                                        
+                                        </i>
+                                        <i class="room__rate-item room__rate-item_fill">
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z" fill="#E6E6E6"/>
+                                            </svg>                                        
+                                        </i>
+                                        <i class="room__rate-item room__rate-item_fill">
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z" fill="#E6E6E6"/>
+                                            </svg>                                        
+                                        </i>
+                                        <i class="room__rate-item room__rate-item_fill">
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z" fill="#E6E6E6"/>
+                                            </svg>                                        
+                                        </i>
+                                        <i class="room__rate-item">
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z" fill="#E6E6E6"/>
+                                            </svg>                                        
+                                        </i>
+                                    </div>
+                                </div>
+                                <div class="room__count">
+                                    <i>
+                                        <img src="<%=require('@img/bed.svg') %>" alt="">
+                                    </i>
+                                    <span>
+                                        3
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="room__content">
+                                <p class="room__txt">
+                                    Являясь всего лишь частью общей картины, акционеры крупнейших компаний и по сей день остаются уделом либералов, которые жаждут быть представлены в исключительно положительном свете.
+                                </p>
+                                <button class="room__content-more">
+                                    Читать полностью
+                                </button>
+                            </div>
+                            <div class="room__dates">
+                                <div class="room__dates-item">
+                                    <h4 class="room__dates-title">
+                                        Заезд
+                                    </h4>
+                                    <input class="room__dates-open js--date" id="date3-1" placeholder="22.02.2022">
+                                    <label for="date1-1">
+                                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 6L13 1" stroke="#629136"/>
+                                    </svg>                                    
+                                </label>
+                                </div>
+                                <div class="room__dates-item">
+                                    <h4 class="room__dates-title">
+                                        Выезд
+                                    </h4>
+                                    <input class="room__dates-open js--date" id="date3-2" placeholder="22.02.2022">
+                                    <label for="date3-2">
+                                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 6L13 1" stroke="#629136"/>
+                                    </svg>                                    
+                                </label>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="room__btn">
+                            Забронировать номер
+                        </button>
+                    </div>
+                </div>
+                <div class="catalog__item-wrapper">
+                    <div class="catalog__item room">
+                        <div class="room__slider">
+                            <div class="room__slider-item">
+                                <img src="<%=require('@img/room-1.jpg') %>" alt="">
+                            </div>
+                            <div class="room__slider-item">
+                                <img src="<%=require('@img/room-1.jpg') %>" alt="">
+                            </div>
+                            <div class="room__slider-item">
+                                <img src="<%=require('@img/room-1.jpg') %>" alt="">
+                            </div>
+                        </div>
+                        <div class="room__wrapper">
+                            <div class="room__header">
+                                <div class="room__header-group">
+                                    <h4 class="room__name">
+                                        Люкс
+                                    </h4>
+                                    <div class="room__rate">
+                                        <i class="room__rate-item room__rate-item_fill">
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z" fill="#E6E6E6"/>
+                                            </svg>                                        
+                                        </i>
+                                        <i class="room__rate-item room__rate-item_fill">
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z" fill="#E6E6E6"/>
+                                            </svg>                                        
+                                        </i>
+                                        <i class="room__rate-item room__rate-item_fill">
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z" fill="#E6E6E6"/>
+                                            </svg>                                        
+                                        </i>
+                                        <i class="room__rate-item room__rate-item_fill">
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z" fill="#E6E6E6"/>
+                                            </svg>                                        
+                                        </i>
+                                        <i class="room__rate-item">
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z" fill="#E6E6E6"/>
+                                            </svg>                                        
+                                        </i>
+                                    </div>
+                                </div>
+                                <div class="room__count">
+                                    <i>
+                                        <img src="<%=require('@img/bed.svg') %>" alt="">
+                                    </i>
+                                    <span>
+                                        3
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="room__content">
+                                <p class="room__txt">
+                                    Являясь всего лишь частью общей картины, акционеры крупнейших компаний и по сей день остаются уделом либералов, которые жаждут быть представлены в исключительно положительном свете.
+                                </p>
+                                <button class="room__content-more">
+                                    Читать полностью
+                                </button>
+                            </div>
+                            <div class="room__dates">
+                                <div class="room__dates-item">
+                                    <h4 class="room__dates-title">
+                                        Заезд
+                                    </h4>
+                                    <input class="room__dates-open js--date" id="date4-1" placeholder="22.02.2022">
+                                    <label for="date4-1">
+                                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 6L13 1" stroke="#629136"/>
+                                    </svg>                                    
+                                </label>
+                                </div>
+                                <div class="room__dates-item">
+                                    <h4 class="room__dates-title">
+                                        Выезд
+                                    </h4>
+                                    <input class="room__dates-open js--date" id="date4-2" placeholder="22.02.2022">
+                                    <label for="date4-2">
+                                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 6L13 1" stroke="#629136"/>
+                                    </svg>                                    
+                                </label>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="room__btn">
+                            Забронировать номер
+                        </button>
+                    </div>
+                </div>
+                <div class="catalog__item-wrapper">
+                    <div class="catalog__item room">
+                        <div class="room__slider">
+                            <div class="room__slider-item">
+                                <img src="<%=require('@img/room-1.jpg') %>" alt="">
+                            </div>
+                            <div class="room__slider-item">
+                                <img src="<%=require('@img/room-1.jpg') %>" alt="">
+                            </div>
+                            <div class="room__slider-item">
+                                <img src="<%=require('@img/room-1.jpg') %>" alt="">
+                            </div>
+                        </div>
+                        <div class="room__wrapper">
+                            <div class="room__header">
+                                <div class="room__header-group">
+                                    <h4 class="room__name">
+                                        Люкс
+                                    </h4>
+                                    <div class="room__rate">
+                                        <i class="room__rate-item room__rate-item_fill">
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z" fill="#E6E6E6"/>
+                                            </svg>                                        
+                                        </i>
+                                        <i class="room__rate-item room__rate-item_fill">
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z" fill="#E6E6E6"/>
+                                            </svg>                                        
+                                        </i>
+                                        <i class="room__rate-item room__rate-item_fill">
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z" fill="#E6E6E6"/>
+                                            </svg>                                        
+                                        </i>
+                                        <i class="room__rate-item room__rate-item_fill">
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z" fill="#E6E6E6"/>
+                                            </svg>                                        
+                                        </i>
+                                        <i class="room__rate-item">
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z" fill="#E6E6E6"/>
+                                            </svg>                                        
+                                        </i>
+                                    </div>
+                                </div>
+                                <div class="room__count">
+                                    <i>
+                                        <img src="<%=require('@img/bed.svg') %>" alt="">
+                                    </i>
+                                    <span>
+                                        3
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="room__content">
+                                <p class="room__txt">
+                                    Являясь всего лишь частью общей картины, акционеры крупнейших компаний и по сей день остаются уделом либералов, которые жаждут быть представлены в исключительно положительном свете.
+                                </p>
+                                <button class="room__content-more">
+                                    Читать полностью
+                                </button>
+                            </div>
+                            <div class="room__dates">
+                                <div class="room__dates-item">
+                                    <h4 class="room__dates-title">
+                                        Заезд
+                                    </h4>
+                                    <input class="room__dates-open js--date" id="date5-1" placeholder="22.02.2022">
+                                    <label for="date5-1">
+                                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 6L13 1" stroke="#629136"/>
+                                    </svg>                                    
+                                </label>
+                                </div>
+                                <div class="room__dates-item">
+                                    <h4 class="room__dates-title">
+                                        Выезд
+                                    </h4>
+                                    <input class="room__dates-open js--date" id="date5-2" placeholder="22.02.2022">
+                                    <label for="date5-2">
+                                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 6L13 1" stroke="#629136"/>
+                                    </svg>                                    
+                                </label>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="room__btn">
+                            Забронировать номер
+                        </button>
+                    </div>
+                </div>
+                <div class="catalog__item-wrapper">
+                    <div class="catalog__item room">
+                        <div class="room__slider">
+                            <div class="room__slider-item">
+                                <img src="<%=require('@img/room-1.jpg') %>" alt="">
+                            </div>
+                            <div class="room__slider-item">
+                                <img src="<%=require('@img/room-1.jpg') %>" alt="">
+                            </div>
+                            <div class="room__slider-item">
+                                <img src="<%=require('@img/room-1.jpg') %>" alt="">
+                            </div>
+                        </div>
+                        <div class="room__wrapper">
+                            <div class="room__header">
+                                <div class="room__header-group">
+                                    <h4 class="room__name">
+                                        Люкс
+                                    </h4>
+                                    <div class="room__rate">
+                                        <i class="room__rate-item room__rate-item_fill">
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z" fill="#E6E6E6"/>
+                                            </svg>                                        
+                                        </i>
+                                        <i class="room__rate-item room__rate-item_fill">
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z" fill="#E6E6E6"/>
+                                            </svg>                                        
+                                        </i>
+                                        <i class="room__rate-item room__rate-item_fill">
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z" fill="#E6E6E6"/>
+                                            </svg>                                        
+                                        </i>
+                                        <i class="room__rate-item room__rate-item_fill">
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z" fill="#E6E6E6"/>
+                                            </svg>                                        
+                                        </i>
+                                        <i class="room__rate-item">
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.52447 0.463524C6.67415 0.00286841 7.32585 0.00286996 7.47553 0.463525L8.68386 4.18237C8.75079 4.38838 8.94277 4.52786 9.15938 4.52786H13.0696C13.554 4.52786 13.7554 5.14767 13.3635 5.43237L10.2001 7.73075C10.0248 7.85807 9.95149 8.08375 10.0184 8.28976L11.2268 12.0086C11.3764 12.4693 10.8492 12.8523 10.4573 12.5676L7.29389 10.2693C7.11865 10.1419 6.88135 10.1419 6.70611 10.2693L3.54267 12.5676C3.15081 12.8523 2.62357 12.4693 2.77325 12.0086L3.98157 8.28976C4.04851 8.08375 3.97518 7.85807 3.79994 7.73075L0.636495 5.43237C0.244639 5.14767 0.446028 4.52786 0.93039 4.52786H4.84062C5.05723 4.52786 5.24921 4.38838 5.31614 4.18237L6.52447 0.463524Z" fill="#E6E6E6"/>
+                                            </svg>                                        
+                                        </i>
+                                    </div>
+                                </div>
+                                <div class="room__count">
+                                    <i>
+                                        <img src="<%=require('@img/bed.svg') %>" alt="">
+                                    </i>
+                                    <span>
+                                        3
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="room__content">
+                                <p class="room__txt">
+                                    Являясь всего лишь частью общей картины, акционеры крупнейших компаний и по сей день остаются уделом либералов, которые жаждут быть представлены в исключительно положительном свете.
+                                </p>
+                                <button class="room__content-more">
+                                    Читать полностью
+                                </button>
+                            </div>
+                            <div class="room__dates">
+                                <div class="room__dates-item">
+                                    <h4 class="room__dates-title">
+                                        Заезд
+                                    </h4>
+                                    <input class="room__dates-open js--date" id="date6-1" placeholder="22.02.2022">
+                                    <label for="date6-1">
+                                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 6L13 1" stroke="#629136"/>
+                                    </svg>                                    
+                                </label>
+                                </div>
+                                <div class="room__dates-item">
+                                    <h4 class="room__dates-title">
+                                        Выезд
+                                    </h4>
+                                    <input class="room__dates-open js--date" id="date6-2" placeholder="22.02.2022">
+                                    <label for="date6-2">
+                                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 6L13 1" stroke="#629136"/>
+                                    </svg>                                    
+                                </label>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="room__btn">
+                            Забронировать номер
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gets" id="price">
+        <div class="container">
+            <h2 class="gets__title">
+                Дополнительные услуги
+            </h2>
+            <div class="gets__wrapper">
+                <div class="gets__nav">
+                    <li class="gets__nav-item">
+                        Комплексное питание
+                    </li>
+                    <li class="gets__nav-item">
+                        Конные туры
+                    </li>
+                    <li class="gets__nav-item">
+                        Снегоходы и квадроциклы
+                    </li>
+                    <li class="gets__nav-item">
+                        Русский бильярд 
+                    </li>
+                    <li class="gets__nav-item">
+                        Баня и сауны
+                    </li>
+                    <li class="gets__nav-item">
+                        Конные туры
+                    </li>
+                    <li class="gets__nav-item">
+                        Снегоходы и квадроциклы
+                    </li>
+                </div>
+                <div class="gets__block">
+                    <div class="gets-block">
+                        <div class="gets-block__compose compose">
+                            <div class="compose__slider">
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="compose__bottom">
+                                <div class="compose__nav">
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="" class="compose__download">
+                                    <i>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.5882 14.2608L14.3457 12.655C14.3662 12.6091 14.3995 12.5701 14.4416 12.5427C14.4838 12.5154 14.533 12.5008 14.5832 12.5008C14.6335 12.5008 14.6826 12.5154 14.7248 12.5427C14.7669 12.5701 14.8003 12.6091 14.8207 12.655L15.579 14.2608L17.2724 14.52C17.4899 14.5533 17.5765 14.8333 17.4199 14.9933L16.194 16.2433L16.4832 18.0083C16.5199 18.235 16.2924 18.4083 16.0982 18.3008L14.5832 17.4675L13.0682 18.3008C12.8732 18.4083 12.6465 18.235 12.6832 18.0083L12.9724 16.2433L11.7474 14.9933C11.589 14.8333 11.6765 14.5533 11.894 14.52L13.5882 14.2617V14.2608Z" stroke="#629136" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16.6666 10V4.79085C16.6666 4.72507 16.6537 4.65993 16.6285 4.59916C16.6034 4.53838 16.5665 4.48317 16.5199 4.43669L13.8966 1.81335C13.8029 1.71956 13.6758 1.6668 13.5433 1.66669H3.83325C3.70064 1.66669 3.57347 1.71937 3.4797 1.81313C3.38593 1.9069 3.33325 2.03408 3.33325 2.16669V17.8334C3.33325 17.966 3.38593 18.0931 3.4797 18.1869C3.57347 18.2807 3.70064 18.3334 3.83325 18.3334H9.16658" stroke="#629136" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.3333 4.50004V1.96171C13.3334 1.90344 13.3507 1.84651 13.3831 1.79809C13.4156 1.74968 13.4616 1.71195 13.5154 1.68966C13.5693 1.66738 13.6285 1.66154 13.6857 1.67288C13.7428 1.68422 13.7953 1.71223 13.8366 1.75338L16.5799 4.49671C16.6215 4.53781 16.6499 4.59035 16.6614 4.64765C16.673 4.70494 16.6672 4.76438 16.6449 4.81838C16.6225 4.87239 16.5846 4.91851 16.5359 4.95087C16.4872 4.98322 16.43 5.00034 16.3716 5.00004H13.8333C13.7006 5.00004 13.5735 4.94737 13.4797 4.8536C13.3859 4.75983 13.3333 4.63265 13.3333 4.50004Z" fill="#629136" stroke="#629136" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                            
+                                    </i>
+                                    Скачайте прайс лист
+                                </a>
+                            </div>
+                        </div>
+                        <div class="gets-block__content">
+                            <h3 class="gets-block__title">
+                                Конные туры
+                                <span>
+                                    NEW
+                                </span>
+                            </h3>
+                            <strong class="gets-block__price">
+                                700 р. в час
+                            </strong>
+                            <div class="gets-block__txt-wrapper">
+                                <p class="gets-block__txt">
+                                    Являясь всего лишь частью общей картины, акционеры крупнейших компаний и по сей день остаются уделом либералов, которые жаждут быть представлены в исключительно положительном свете. <br>
+                                    которые жаждут быть представлены в исключительно положительном свете.
+                                </p>
+                                <button class="gets-block__more">Читать полностью</button>
+                            </div>
+                            <ul class="gets-block__list">
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                            </ul>
+                            <div class="gets-block__button-wrapper">
+                                <button class="gets-block__button">
+                                    Забронировать номер
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gets-block">
+                        <div class="gets-block__compose compose">
+                            <div class="compose__slider">
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="compose__bottom">
+                                <div class="compose__nav">
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="" class="compose__download">
+                                    <i>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.5882 14.2608L14.3457 12.655C14.3662 12.6091 14.3995 12.5701 14.4416 12.5427C14.4838 12.5154 14.533 12.5008 14.5832 12.5008C14.6335 12.5008 14.6826 12.5154 14.7248 12.5427C14.7669 12.5701 14.8003 12.6091 14.8207 12.655L15.579 14.2608L17.2724 14.52C17.4899 14.5533 17.5765 14.8333 17.4199 14.9933L16.194 16.2433L16.4832 18.0083C16.5199 18.235 16.2924 18.4083 16.0982 18.3008L14.5832 17.4675L13.0682 18.3008C12.8732 18.4083 12.6465 18.235 12.6832 18.0083L12.9724 16.2433L11.7474 14.9933C11.589 14.8333 11.6765 14.5533 11.894 14.52L13.5882 14.2617V14.2608Z" stroke="#629136" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16.6666 10V4.79085C16.6666 4.72507 16.6537 4.65993 16.6285 4.59916C16.6034 4.53838 16.5665 4.48317 16.5199 4.43669L13.8966 1.81335C13.8029 1.71956 13.6758 1.6668 13.5433 1.66669H3.83325C3.70064 1.66669 3.57347 1.71937 3.4797 1.81313C3.38593 1.9069 3.33325 2.03408 3.33325 2.16669V17.8334C3.33325 17.966 3.38593 18.0931 3.4797 18.1869C3.57347 18.2807 3.70064 18.3334 3.83325 18.3334H9.16658" stroke="#629136" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.3333 4.50004V1.96171C13.3334 1.90344 13.3507 1.84651 13.3831 1.79809C13.4156 1.74968 13.4616 1.71195 13.5154 1.68966C13.5693 1.66738 13.6285 1.66154 13.6857 1.67288C13.7428 1.68422 13.7953 1.71223 13.8366 1.75338L16.5799 4.49671C16.6215 4.53781 16.6499 4.59035 16.6614 4.64765C16.673 4.70494 16.6672 4.76438 16.6449 4.81838C16.6225 4.87239 16.5846 4.91851 16.5359 4.95087C16.4872 4.98322 16.43 5.00034 16.3716 5.00004H13.8333C13.7006 5.00004 13.5735 4.94737 13.4797 4.8536C13.3859 4.75983 13.3333 4.63265 13.3333 4.50004Z" fill="#629136" stroke="#629136" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                            
+                                    </i>
+                                    Скачайте прайс лист
+                                </a>
+                            </div>
+                        </div>
+                        <div class="gets-block__content">
+                            <h3 class="gets-block__title">
+                                Конные туры
+                                <span>
+                                    NEW
+                                </span>
+                            </h3>
+                            <strong class="gets-block__price">
+                                700 р. в час
+                            </strong>
+                            <div class="gets-block__txt-wrapper">
+                                <p class="gets-block__txt">
+                                    Являясь всего лишь частью общей картины, акционеры крупнейших компаний и по сей день остаются уделом либералов, которые жаждут быть представлены в исключительно положительном свете. <br>
+                                    которые жаждут быть представлены в исключительно положительном свете.
+                                </p>
+                                <button class="gets-block__more">Читать полностью</button>
+                            </div>
+                            <ul class="gets-block__list">
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                            </ul>
+                            <div class="gets-block__button-wrapper">
+                                <button class="gets-block__button">
+                                    Забронировать номер
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gets-block">
+                        <div class="gets-block__compose compose">
+                            <div class="compose__slider">
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="compose__bottom">
+                                <div class="compose__nav">
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="" class="compose__download">
+                                    <i>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.5882 14.2608L14.3457 12.655C14.3662 12.6091 14.3995 12.5701 14.4416 12.5427C14.4838 12.5154 14.533 12.5008 14.5832 12.5008C14.6335 12.5008 14.6826 12.5154 14.7248 12.5427C14.7669 12.5701 14.8003 12.6091 14.8207 12.655L15.579 14.2608L17.2724 14.52C17.4899 14.5533 17.5765 14.8333 17.4199 14.9933L16.194 16.2433L16.4832 18.0083C16.5199 18.235 16.2924 18.4083 16.0982 18.3008L14.5832 17.4675L13.0682 18.3008C12.8732 18.4083 12.6465 18.235 12.6832 18.0083L12.9724 16.2433L11.7474 14.9933C11.589 14.8333 11.6765 14.5533 11.894 14.52L13.5882 14.2617V14.2608Z" stroke="#629136" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16.6666 10V4.79085C16.6666 4.72507 16.6537 4.65993 16.6285 4.59916C16.6034 4.53838 16.5665 4.48317 16.5199 4.43669L13.8966 1.81335C13.8029 1.71956 13.6758 1.6668 13.5433 1.66669H3.83325C3.70064 1.66669 3.57347 1.71937 3.4797 1.81313C3.38593 1.9069 3.33325 2.03408 3.33325 2.16669V17.8334C3.33325 17.966 3.38593 18.0931 3.4797 18.1869C3.57347 18.2807 3.70064 18.3334 3.83325 18.3334H9.16658" stroke="#629136" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.3333 4.50004V1.96171C13.3334 1.90344 13.3507 1.84651 13.3831 1.79809C13.4156 1.74968 13.4616 1.71195 13.5154 1.68966C13.5693 1.66738 13.6285 1.66154 13.6857 1.67288C13.7428 1.68422 13.7953 1.71223 13.8366 1.75338L16.5799 4.49671C16.6215 4.53781 16.6499 4.59035 16.6614 4.64765C16.673 4.70494 16.6672 4.76438 16.6449 4.81838C16.6225 4.87239 16.5846 4.91851 16.5359 4.95087C16.4872 4.98322 16.43 5.00034 16.3716 5.00004H13.8333C13.7006 5.00004 13.5735 4.94737 13.4797 4.8536C13.3859 4.75983 13.3333 4.63265 13.3333 4.50004Z" fill="#629136" stroke="#629136" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                            
+                                    </i>
+                                    Скачайте прайс лист
+                                </a>
+                            </div>
+                        </div>
+                        <div class="gets-block__content">
+                            <h3 class="gets-block__title">
+                                Конные туры
+                                <span>
+                                    NEW
+                                </span>
+                            </h3>
+                            <strong class="gets-block__price">
+                                700 р. в час
+                            </strong>
+                            <div class="gets-block__txt-wrapper">
+                                <p class="gets-block__txt">
+                                    Являясь всего лишь частью общей картины, акционеры крупнейших компаний и по сей день остаются уделом либералов, которые жаждут быть представлены в исключительно положительном свете. <br>
+                                    которые жаждут быть представлены в исключительно положительном свете.
+                                </p>
+                                <button class="gets-block__more">Читать полностью</button>
+                            </div>
+                            <ul class="gets-block__list">
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                            </ul>
+                            <div class="gets-block__button-wrapper">
+                                <button class="gets-block__button">
+                                    Забронировать номер
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gets-block">
+                        <div class="gets-block__compose compose">
+                            <div class="compose__slider">
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="compose__bottom">
+                                <div class="compose__nav">
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="" class="compose__download">
+                                    <i>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.5882 14.2608L14.3457 12.655C14.3662 12.6091 14.3995 12.5701 14.4416 12.5427C14.4838 12.5154 14.533 12.5008 14.5832 12.5008C14.6335 12.5008 14.6826 12.5154 14.7248 12.5427C14.7669 12.5701 14.8003 12.6091 14.8207 12.655L15.579 14.2608L17.2724 14.52C17.4899 14.5533 17.5765 14.8333 17.4199 14.9933L16.194 16.2433L16.4832 18.0083C16.5199 18.235 16.2924 18.4083 16.0982 18.3008L14.5832 17.4675L13.0682 18.3008C12.8732 18.4083 12.6465 18.235 12.6832 18.0083L12.9724 16.2433L11.7474 14.9933C11.589 14.8333 11.6765 14.5533 11.894 14.52L13.5882 14.2617V14.2608Z" stroke="#629136" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16.6666 10V4.79085C16.6666 4.72507 16.6537 4.65993 16.6285 4.59916C16.6034 4.53838 16.5665 4.48317 16.5199 4.43669L13.8966 1.81335C13.8029 1.71956 13.6758 1.6668 13.5433 1.66669H3.83325C3.70064 1.66669 3.57347 1.71937 3.4797 1.81313C3.38593 1.9069 3.33325 2.03408 3.33325 2.16669V17.8334C3.33325 17.966 3.38593 18.0931 3.4797 18.1869C3.57347 18.2807 3.70064 18.3334 3.83325 18.3334H9.16658" stroke="#629136" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.3333 4.50004V1.96171C13.3334 1.90344 13.3507 1.84651 13.3831 1.79809C13.4156 1.74968 13.4616 1.71195 13.5154 1.68966C13.5693 1.66738 13.6285 1.66154 13.6857 1.67288C13.7428 1.68422 13.7953 1.71223 13.8366 1.75338L16.5799 4.49671C16.6215 4.53781 16.6499 4.59035 16.6614 4.64765C16.673 4.70494 16.6672 4.76438 16.6449 4.81838C16.6225 4.87239 16.5846 4.91851 16.5359 4.95087C16.4872 4.98322 16.43 5.00034 16.3716 5.00004H13.8333C13.7006 5.00004 13.5735 4.94737 13.4797 4.8536C13.3859 4.75983 13.3333 4.63265 13.3333 4.50004Z" fill="#629136" stroke="#629136" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                            
+                                    </i>
+                                    Скачайте прайс лист
+                                </a>
+                            </div>
+                        </div>
+                        <div class="gets-block__content">
+                            <h3 class="gets-block__title">
+                                Конные туры
+                                <span>
+                                    NEW
+                                </span>
+                            </h3>
+                            <strong class="gets-block__price">
+                                700 р. в час
+                            </strong>
+                            <div class="gets-block__txt-wrapper">
+                                <p class="gets-block__txt">
+                                    Являясь всего лишь частью общей картины, акционеры крупнейших компаний и по сей день остаются уделом либералов, которые жаждут быть представлены в исключительно положительном свете. <br>
+                                    которые жаждут быть представлены в исключительно положительном свете.
+                                </p>
+                                <button class="gets-block__more">Читать полностью</button>
+                            </div>
+                            <ul class="gets-block__list">
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                            </ul>
+                            <div class="gets-block__button-wrapper">
+                                <button class="gets-block__button">
+                                    Забронировать номер
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gets-block">
+                        <div class="gets-block__compose compose">
+                            <div class="compose__slider">
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="compose__bottom">
+                                <div class="compose__nav">
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="" class="compose__download">
+                                    <i>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.5882 14.2608L14.3457 12.655C14.3662 12.6091 14.3995 12.5701 14.4416 12.5427C14.4838 12.5154 14.533 12.5008 14.5832 12.5008C14.6335 12.5008 14.6826 12.5154 14.7248 12.5427C14.7669 12.5701 14.8003 12.6091 14.8207 12.655L15.579 14.2608L17.2724 14.52C17.4899 14.5533 17.5765 14.8333 17.4199 14.9933L16.194 16.2433L16.4832 18.0083C16.5199 18.235 16.2924 18.4083 16.0982 18.3008L14.5832 17.4675L13.0682 18.3008C12.8732 18.4083 12.6465 18.235 12.6832 18.0083L12.9724 16.2433L11.7474 14.9933C11.589 14.8333 11.6765 14.5533 11.894 14.52L13.5882 14.2617V14.2608Z" stroke="#629136" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16.6666 10V4.79085C16.6666 4.72507 16.6537 4.65993 16.6285 4.59916C16.6034 4.53838 16.5665 4.48317 16.5199 4.43669L13.8966 1.81335C13.8029 1.71956 13.6758 1.6668 13.5433 1.66669H3.83325C3.70064 1.66669 3.57347 1.71937 3.4797 1.81313C3.38593 1.9069 3.33325 2.03408 3.33325 2.16669V17.8334C3.33325 17.966 3.38593 18.0931 3.4797 18.1869C3.57347 18.2807 3.70064 18.3334 3.83325 18.3334H9.16658" stroke="#629136" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.3333 4.50004V1.96171C13.3334 1.90344 13.3507 1.84651 13.3831 1.79809C13.4156 1.74968 13.4616 1.71195 13.5154 1.68966C13.5693 1.66738 13.6285 1.66154 13.6857 1.67288C13.7428 1.68422 13.7953 1.71223 13.8366 1.75338L16.5799 4.49671C16.6215 4.53781 16.6499 4.59035 16.6614 4.64765C16.673 4.70494 16.6672 4.76438 16.6449 4.81838C16.6225 4.87239 16.5846 4.91851 16.5359 4.95087C16.4872 4.98322 16.43 5.00034 16.3716 5.00004H13.8333C13.7006 5.00004 13.5735 4.94737 13.4797 4.8536C13.3859 4.75983 13.3333 4.63265 13.3333 4.50004Z" fill="#629136" stroke="#629136" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                            
+                                    </i>
+                                    Скачайте прайс лист
+                                </a>
+                            </div>
+                        </div>
+                        <div class="gets-block__content">
+                            <h3 class="gets-block__title">
+                                Конные туры
+                                <span>
+                                    NEW
+                                </span>
+                            </h3>
+                            <strong class="gets-block__price">
+                                700 р. в час
+                            </strong>
+                            <div class="gets-block__txt-wrapper">
+                                <p class="gets-block__txt">
+                                    Являясь всего лишь частью общей картины, акционеры крупнейших компаний и по сей день остаются уделом либералов, которые жаждут быть представлены в исключительно положительном свете. <br>
+                                    которые жаждут быть представлены в исключительно положительном свете.
+                                </p>
+                                <button class="gets-block__more">Читать полностью</button>
+                            </div>
+                            <ul class="gets-block__list">
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                            </ul>
+                            <div class="gets-block__button-wrapper">
+                                <button class="gets-block__button">
+                                    Забронировать номер
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gets-block">
+                        <div class="gets-block__compose compose">
+                            <div class="compose__slider">
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="compose__bottom">
+                                <div class="compose__nav">
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="" class="compose__download">
+                                    <i>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.5882 14.2608L14.3457 12.655C14.3662 12.6091 14.3995 12.5701 14.4416 12.5427C14.4838 12.5154 14.533 12.5008 14.5832 12.5008C14.6335 12.5008 14.6826 12.5154 14.7248 12.5427C14.7669 12.5701 14.8003 12.6091 14.8207 12.655L15.579 14.2608L17.2724 14.52C17.4899 14.5533 17.5765 14.8333 17.4199 14.9933L16.194 16.2433L16.4832 18.0083C16.5199 18.235 16.2924 18.4083 16.0982 18.3008L14.5832 17.4675L13.0682 18.3008C12.8732 18.4083 12.6465 18.235 12.6832 18.0083L12.9724 16.2433L11.7474 14.9933C11.589 14.8333 11.6765 14.5533 11.894 14.52L13.5882 14.2617V14.2608Z" stroke="#629136" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16.6666 10V4.79085C16.6666 4.72507 16.6537 4.65993 16.6285 4.59916C16.6034 4.53838 16.5665 4.48317 16.5199 4.43669L13.8966 1.81335C13.8029 1.71956 13.6758 1.6668 13.5433 1.66669H3.83325C3.70064 1.66669 3.57347 1.71937 3.4797 1.81313C3.38593 1.9069 3.33325 2.03408 3.33325 2.16669V17.8334C3.33325 17.966 3.38593 18.0931 3.4797 18.1869C3.57347 18.2807 3.70064 18.3334 3.83325 18.3334H9.16658" stroke="#629136" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.3333 4.50004V1.96171C13.3334 1.90344 13.3507 1.84651 13.3831 1.79809C13.4156 1.74968 13.4616 1.71195 13.5154 1.68966C13.5693 1.66738 13.6285 1.66154 13.6857 1.67288C13.7428 1.68422 13.7953 1.71223 13.8366 1.75338L16.5799 4.49671C16.6215 4.53781 16.6499 4.59035 16.6614 4.64765C16.673 4.70494 16.6672 4.76438 16.6449 4.81838C16.6225 4.87239 16.5846 4.91851 16.5359 4.95087C16.4872 4.98322 16.43 5.00034 16.3716 5.00004H13.8333C13.7006 5.00004 13.5735 4.94737 13.4797 4.8536C13.3859 4.75983 13.3333 4.63265 13.3333 4.50004Z" fill="#629136" stroke="#629136" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                            
+                                    </i>
+                                    Скачайте прайс лист
+                                </a>
+                            </div>
+                        </div>
+                        <div class="gets-block__content">
+                            <h3 class="gets-block__title">
+                                Конные туры
+                                <span>
+                                    NEW
+                                </span>
+                            </h3>
+                            <strong class="gets-block__price">
+                                700 р. в час
+                            </strong>
+                            <div class="gets-block__txt-wrapper">
+                                <p class="gets-block__txt">
+                                    Являясь всего лишь частью общей картины, акционеры крупнейших компаний и по сей день остаются уделом либералов, которые жаждут быть представлены в исключительно положительном свете. <br>
+                                    которые жаждут быть представлены в исключительно положительном свете.
+                                </p>
+                                <button class="gets-block__more">Читать полностью</button>
+                            </div>
+                            <ul class="gets-block__list">
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                            </ul>
+                            <div class="gets-block__button-wrapper">
+                                <button class="gets-block__button">
+                                    Забронировать номер
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gets-block">
+                        <div class="gets-block__compose compose">
+                            <div class="compose__slider">
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                                <div class="compose__slider-item">
+                                    <a href="<%=require('@img/gets-1.png') %>" class="compose__slider-image js--openImage">
+                                        <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="compose__bottom">
+                                <div class="compose__nav">
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="compose__nav-item">
+                                        <div class="compose__nav-image">
+                                            <img src="<%=require('@img/gets-1.png') %>" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="" class="compose__download">
+                                    <i>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.5882 14.2608L14.3457 12.655C14.3662 12.6091 14.3995 12.5701 14.4416 12.5427C14.4838 12.5154 14.533 12.5008 14.5832 12.5008C14.6335 12.5008 14.6826 12.5154 14.7248 12.5427C14.7669 12.5701 14.8003 12.6091 14.8207 12.655L15.579 14.2608L17.2724 14.52C17.4899 14.5533 17.5765 14.8333 17.4199 14.9933L16.194 16.2433L16.4832 18.0083C16.5199 18.235 16.2924 18.4083 16.0982 18.3008L14.5832 17.4675L13.0682 18.3008C12.8732 18.4083 12.6465 18.235 12.6832 18.0083L12.9724 16.2433L11.7474 14.9933C11.589 14.8333 11.6765 14.5533 11.894 14.52L13.5882 14.2617V14.2608Z" stroke="#629136" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16.6666 10V4.79085C16.6666 4.72507 16.6537 4.65993 16.6285 4.59916C16.6034 4.53838 16.5665 4.48317 16.5199 4.43669L13.8966 1.81335C13.8029 1.71956 13.6758 1.6668 13.5433 1.66669H3.83325C3.70064 1.66669 3.57347 1.71937 3.4797 1.81313C3.38593 1.9069 3.33325 2.03408 3.33325 2.16669V17.8334C3.33325 17.966 3.38593 18.0931 3.4797 18.1869C3.57347 18.2807 3.70064 18.3334 3.83325 18.3334H9.16658" stroke="#629136" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.3333 4.50004V1.96171C13.3334 1.90344 13.3507 1.84651 13.3831 1.79809C13.4156 1.74968 13.4616 1.71195 13.5154 1.68966C13.5693 1.66738 13.6285 1.66154 13.6857 1.67288C13.7428 1.68422 13.7953 1.71223 13.8366 1.75338L16.5799 4.49671C16.6215 4.53781 16.6499 4.59035 16.6614 4.64765C16.673 4.70494 16.6672 4.76438 16.6449 4.81838C16.6225 4.87239 16.5846 4.91851 16.5359 4.95087C16.4872 4.98322 16.43 5.00034 16.3716 5.00004H13.8333C13.7006 5.00004 13.5735 4.94737 13.4797 4.8536C13.3859 4.75983 13.3333 4.63265 13.3333 4.50004Z" fill="#629136" stroke="#629136" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                            
+                                    </i>
+                                    Скачайте прайс лист
+                                </a>
+                            </div>
+                        </div>
+                        <div class="gets-block__content">
+                            <h3 class="gets-block__title">
+                                Конные туры
+                                <span>
+                                    NEW
+                                </span>
+                            </h3>
+                            <strong class="gets-block__price">
+                                700 р. в час
+                            </strong>
+                            <div class="gets-block__txt-wrapper">
+                                <p class="gets-block__txt">
+                                    Являясь всего лишь частью общей картины, акционеры крупнейших компаний и по сей день остаются уделом либералов, которые жаждут быть представлены в исключительно положительном свете. <br>
+                                    которые жаждут быть представлены в исключительно положительном свете.
+                                </p>
+                                <button class="gets-block__more">Читать полностью</button>
+                            </div>
+                            <ul class="gets-block__list">
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                                <li class="gets-block__list-item">
+                                    Заголвок услуги 1
+                                </li>
+                            </ul>
+                            <div class="gets-block__button-wrapper">
+                                <button class="gets-block__button">
+                                    Забронировать номер
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sales">
+        <div class="container">
+            <div class="sales__row">
+                <div class="sales__col sales__col_lg">
+                    <div class="sales__block sales__block_left">
+                        <h3 class="sales__title">
+                            Акции и скидки
+                        </h3>
+                        <div class="sales__slider">
+                            <div class="sales__item-wrapper">
+                                <div class="sales__item">
+                                    <div class="sales__item-image">
+                                        <img src="<%=require('@img/sales-1.jpg') %>" alt="">
+                                    </div>
+                                    <h4 class="sales__item-title">
+                                        Скидка 15% на все доп. услуги 
+                                    </h4>
+                                    <p class="sales__item-txt">
+                                        Действует до 15 февраля
+                                    </p>
+                                    <a href="" class="sales__item-link">
+                                        Посмотреть акцию
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="sales__item-wrapper">
+                                <div class="sales__item">
+                                    <div class="sales__item-image">
+                                        <img src="<%=require('@img/sales-1.jpg') %>" alt="">
+                                    </div>
+                                    <h4 class="sales__item-title">
+                                        Скидка 15% на все доп. услуги 
+                                    </h4>
+                                    <p class="sales__item-txt">
+                                        Действует до 15 февраля
+                                    </p>
+                                    <a href="" class="sales__item-link">
+                                        Посмотреть акцию
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="sales__item-wrapper">
+                                <div class="sales__item">
+                                    <div class="sales__item-image">
+                                        <img src="<%=require('@img/sales-1.jpg') %>" alt="">
+                                    </div>
+                                    <h4 class="sales__item-title">
+                                        Скидка 15% на все доп. услуги 
+                                    </h4>
+                                    <p class="sales__item-txt">
+                                        Действует до 15 февраля
+                                    </p>
+                                    <a href="" class="sales__item-link">
+                                        Посмотреть акцию
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="sales__item-wrapper">
+                                <div class="sales__item">
+                                    <div class="sales__item-image">
+                                        <img src="<%=require('@img/sales-1.jpg') %>" alt="">
+                                    </div>
+                                    <h4 class="sales__item-title">
+                                        Скидка 15% на все доп. услуги 
+                                    </h4>
+                                    <p class="sales__item-txt">
+                                        Действует до 15 февраля
+                                    </p>
+                                    <a href="" class="sales__item-link">
+                                        Посмотреть акцию
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sales__col sales__col_sm">
+                    <div class="sales__block">
+                        <h3 class="sales__title">
+                            Прайс-лист
+                        </h3>
+                        <p class="sales__txt">
+                            Являясь всего лишь частью общей картины, акционеры крупнейших компаний и по сей день остаются уделом либералов
+                        </p>
+                        <p class="sales__txt">
+                            Являясь всего лишь частью общей картины, акционеры крупнейших компаний и по сей день остаются уделом либералов
+                        </p>
+                        <a href="" class="sales__btn">
+                            Скачать прайс-лист
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="gallery__title">
+                Фотогалерея
+            </h2>
+            <div class="gallery__row">
+                <div class="gallery__item">
+                    <a href="<%=require('@img/gallery-1.png') %>" class="gallery__link js--openImage">
+                        <img src="<%=require('@img/gallery-1.png') %>" alt="">
+                    </a>
+                </div>
+                <div class="gallery__item">
+                    <a href="<%=require('@img/gallery-1.png') %>" class="gallery__link js--openImage">
+                        <img src="<%=require('@img/gallery-1.png') %>" alt="">
+                    </a>
+                </div>
+                <div class="gallery__item">
+                    <a href="<%=require('@img/gallery-1.png') %>" class="gallery__link js--openImage">
+                        <img src="<%=require('@img/gallery-1.png') %>" alt="">
+                    </a>
+                </div>
+                <div class="gallery__item">
+                    <a href="<%=require('@img/gallery-1.png') %>" class="gallery__link js--openImage">
+                        <img src="<%=require('@img/gallery-1.png') %>" alt="">
+                    </a>
+                </div>
+                <div class="gallery__item">
+                    <a href="<%=require('@img/gallery-1.png') %>" class="gallery__link js--openImage">
+                        <img src="<%=require('@img/gallery-1.png') %>" alt="">
+                    </a>
+                </div>
+                <div class="gallery__item">
+                    <a href="<%=require('@img/gallery-1.png') %>" class="gallery__link js--openImage">
+                        <img src="<%=require('@img/gallery-1.png') %>" alt="">
+                    </a>
+                </div>
+                <div class="gallery__item">
+                    <a href="<%=require('@img/gallery-1.png') %>" class="gallery__link js--openImage">
+                        <img src="<%=require('@img/gallery-1.png') %>" alt="">
+                    </a>
+                </div>
+                <div class="gallery__item">
+                    <a href="<%=require('@img/gallery-1.png') %>" class="gallery__link js--openImage">
+                        <img src="<%=require('@img/gallery-1.png') %>" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="faq__title">
+                Вопрос - <strong>ответ</strong>
+            </h2>
+            <div class="faq__accord">
+                <div class="faq__accord-item faq-item">
+                    <button class="faq-item__header">
+                        Длинный заголовок вопроса 1
+                        <i>
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.7994 5.54V7.46H7.45941V12.8H5.53941V7.46H0.199414V5.54H5.53941V0.2H7.45941V5.54H12.7994Z" fill="#629136"/>
+                            </svg>                                
+                        </i>
+                    </button>
+                    <div class="faq-item__body">
+                        <div class="faq-answer">
+                            <h4 class="faq-answer__title">
+                                Ответ
+                            </h4>
+                            <p class="faq-answer__txt">
+                                Являясь всего лишь частью общей картины, акционеры крупнейших компаний и по сей день остаются уделом либералов, которые жаждут быть представлены в исключительно положительном свете.
+                            </p>
+                            <div class="faq-answer__button-wrapper">
+                                <button class="faq-answer__button">
+                                    Обратная связь
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__accord-item faq-item">
+                    <button class="faq-item__header">
+                        Длинный заголовок вопроса 1
+                        <i>
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.7994 5.54V7.46H7.45941V12.8H5.53941V7.46H0.199414V5.54H5.53941V0.2H7.45941V5.54H12.7994Z" fill="#629136"/>
+                            </svg>                                
+                        </i>
+                    </button>
+                    <div class="faq-item__body">
+                        <div class="faq-answer">
+                            <h4 class="faq-answer__title">
+                                Ответ
+                            </h4>
+                            <p class="faq-answer__txt">
+                                Являясь всего лишь частью общей картины, акционеры крупнейших компаний и по сей день остаются уделом либералов, которые жаждут быть представлены в исключительно положительном свете.
+                            </p>
+                            <div class="faq-answer__button-wrapper">
+                                <button class="faq-answer__button">
+                                    Обратная связь
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__accord-item faq-item">
+                    <button class="faq-item__header">
+                        Длинный заголовок вопроса 1
+                        <i>
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.7994 5.54V7.46H7.45941V12.8H5.53941V7.46H0.199414V5.54H5.53941V0.2H7.45941V5.54H12.7994Z" fill="#629136"/>
+                            </svg>                                
+                        </i>
+                    </button>
+                    <div class="faq-item__body">
+                        <div class="faq-answer">
+                            <h4 class="faq-answer__title">
+                                Ответ
+                            </h4>
+                            <p class="faq-answer__txt">
+                                Являясь всего лишь частью общей картины, акционеры крупнейших компаний и по сей день остаются уделом либералов, которые жаждут быть представлены в исключительно положительном свете.
+                            </p>
+                            <div class="faq-answer__button-wrapper">
+                                <button class="faq-answer__button">
+                                    Обратная связь
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__accord-item faq-item">
+                    <button class="faq-item__header">
+                        Длинный заголовок вопроса 1
+                        <i>
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.7994 5.54V7.46H7.45941V12.8H5.53941V7.46H0.199414V5.54H5.53941V0.2H7.45941V5.54H12.7994Z" fill="#629136"/>
+                            </svg>                                
+                        </i>
+                    </button>
+                    <div class="faq-item__body">
+                        <div class="faq-answer">
+                            <h4 class="faq-answer__title">
+                                Ответ
+                            </h4>
+                            <p class="faq-answer__txt">
+                                Являясь всего лишь частью общей картины, акционеры крупнейших компаний и по сей день остаются уделом либералов, которые жаждут быть представлены в исключительно положительном свете.
+                            </p>
+                            <div class="faq-answer__button-wrapper">
+                                <button class="faq-answer__button">
+                                    Обратная связь
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <h2 class="contacts__title">
+                Контакты
+            </h2>
+        </div>
+        <div class="contacts__wrapper">
+            <div class="contacts__map">
+                <iframe style="pointer-events: none;" src="https://yandex.ru/map-widget/v1/-/CCUBeWcRlC" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+            </div>
+            <div class="container">
+                <div class="contacts__info">
+                    <div class="contacts__info-block">
+                        <h3 class="contacts__info-title">
+                            Адрес
+                        </h3>
+                        <p class="contacts__info-txt">
+                            Адрес: 453732, Россия, Республика Башкортостан, Учалинский район, с.Ургуново, ул.Центральная, 101
+                        </p>
+                        <p class="contacts__info-txt">
+                            в г.Учалы: 8-906-371-43-00 (пн-воскр с 09.00ч. до 18.00ч.)
+                        </p>
+                        <p class="contacts__info-txt">
+                            тел/факс: 8(34791) 5-38-25 - директор, бухгалтер
+                        </p>
+                        <p class="contacts__info-txt">
+                            (время работы: пн-пт с 09.00ч. до 18.00ч.)
+                        </p>
+                    </div>
+                    <div class="contacts__info-block">
+                        <h3 class="contacts__info-title">
+                            Почта
+                        </h3>
+                        <a href="mailto:info@urgun.ru" class="contacts__info-link">info@urgun.ru</a>
+                    </div>
+                    <div class="contacts__info-block">
+                        <h3 class="contacts__info-title">
+                            Телефон
+                        </h3>
+                        <a href="tel:8 (963) 900-16-11" class="contacts__info-link">8 (963) 900-16-11</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<%= require('@parts/footer.ejs')() %>
